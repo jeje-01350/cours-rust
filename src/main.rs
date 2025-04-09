@@ -1,11 +1,15 @@
 fn main() {
-    let my_string = "Hello";
+    println!("le plus grand nombre est {}", get_bigger(1, 2));
+}
 
-    match my_string {
-        "Hello" => println!("Anglais"),
-        "Bonjour" => println!("Français"),
-        "Hola" => println!("Espagnol"),
-        "Ciao" => println!("Italien"),
-        _ => println!("Autre"),
+/* fn add(a: i32, b: i32) -> i32 {
+    a + b
+} */
+
+fn get_bigger(a: i32, b: i32) -> i32 {
+    if a > b {
+        a
+    } else {
+        b
     }
 }
