@@ -1,13 +1,11 @@
 fn main() {
-    let age: i32 = 20;
+    let my_string = "Hello";
 
-    if age >= 18 {
-        println!("Vous êtes majeur");
-    } else {
-        println!("Vous êtes mineur");
+    match my_string {
+        "Hello" => println!("Anglais"),
+        "Bonjour" => println!("Français"),
+        "Hola" => println!("Espagnol"),
+        "Ciao" => println!("Italien"),
+        _ => println!("Autre"),
     }
-
-    if age >= 18 && (age == 20 || age == 21) {
-        println!("ok");
-    } 
 }
